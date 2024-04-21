@@ -1,0 +1,19 @@
+show databases;
+
+CREATE TABLE employee (
+  Id INT(10) PRIMARY KEY,
+  name varchar(20) NOT NULL,
+  address varchar(20) NOT NULL ,
+  salary int (50)
+);
+
+select * from employee;
+
+INSERT INTO employee VALUES (120, 'rohit', 'malad','100000');
+INSERT INTO employee VALUES (121, 'chaman', 'malad','200000' );
+INSERT INTO employee VALUES (122, 'dabjeet', 'bhyndar','300000');
+INSERT INTO employee VALUES (123, 'asif', 'malad','400000');
+INSERT INTO employee VALUES (124, 'satish', 'kandivali','500000');
+INSERT INTO employee VALUES (125, 'deva', 'malad','600000');
+
+select * from employee where ID IN (select ID from employee where salary > 420000);
