@@ -4,7 +4,7 @@ CREATE TABLE college (
   cource varchar(20) NOT NULL,
   year varchar(12) NOT NULL
 );
-#########################################################################
+
 INSERT INTO college VALUES (120, 'rohit', 'bsc.cs','first year');
 INSERT INTO college VALUES (121, 'chaman', 'bsc.cs','first year' );
 INSERT INTO college VALUES (122, 'dabjeet', 'bsc.cs','first year');
@@ -14,19 +14,19 @@ INSERT INTO college VALUES (125, 'deva', 'bsc.cs','first year');
 INSERT INTO college VALUES (126, 'sai', 'bsc.cs','first year');
 INSERT INTO college VALUES (127, 'sunny', 'bsc.cs','first year');
 INSERT INTO college VALUES (128, 'pranay', 'bsc.cs','first year');
-#########################################################################
+
 UPDATE college SET name = 'mandal' WHERE ID='121';
-#########################################################################
+
 delete from college WHERE ID='124';
-#########################################################################
+
 ALTER TABLE college add age int;
-############################################################################
+
 RENAME TABLE college to university;
-##########################################################################
+
 ALTER TABLE university DROP age;
-#####################################################################
+
 drop table university;
-################################################################### 
+
 SELECT * FROM university ;
 
 
