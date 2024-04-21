@@ -1,3 +1,5 @@
+show databases;
+
 CREATE TABLE students (
   Id INT(10) PRIMARY KEY,
   name varchar(20) NOT NULL,
@@ -5,6 +7,7 @@ CREATE TABLE students (
   contact INT(12) NOT NULL
 );
 
+select * from students;
 
 INSERT INTO students VALUES (120, 'rohit', 'malad','81692171');
 INSERT INTO students VALUES (121, 'chaman', 'malad','2312638' );
@@ -30,5 +33,3 @@ RENAME  TABLE students TO practical;
 DROP TABLE practical;
 
 SELECT * FROM practical ;
-
-
