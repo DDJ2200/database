@@ -1,0 +1,45 @@
+show databases;
+CREATE TABLE college (
+  Id INT(10) PRIMARY KEY,
+  name varchar(20) NOT NULL,
+  cource varchar(20) NOT NULL,
+  year varchar(12) NOT NULL
+);
+
+INSERT INTO college VALUES (120, 'rohit', 'bsc.cs','first year');
+INSERT INTO college VALUES (121, 'chaman', 'bsc.cs','first year' );
+INSERT INTO college VALUES (122, 'dabjeet', 'bsc.cs','first year');
+INSERT INTO college VALUES (123, 'asif', 'bsc.cs','first year');
+INSERT INTO college VALUES (124, 'satish', 'bsc.cs','first year');
+INSERT INTO college VALUES (125, 'deva', 'bsc.cs','first year');
+INSERT INTO college VALUES (126, 'sai', 'bsc.cs','first year');
+INSERT INTO college VALUES (127, 'sunny', 'bsc.cs','first year');
+INSERT INTO college VALUES (128, 'pranay', 'bsc.cs','first year');
+
+select * from college;
+
+alter table college add salary int(10);
+
+UPDATE college SET salary = 25000 WHERE ID = 120;
+UPDATE college SET salary = 26000 WHERE ID = 121;
+UPDATE college SET salary = 27000 WHERE ID = 122;
+UPDATE college SET salary = 28000 WHERE ID = 123;
+UPDATE college SET salary = 29000 WHERE ID = 124;
+UPDATE college SET salary = 21000 WHERE ID = 125;
+UPDATE college SET salary = 22000 WHERE ID = 126;
+UPDATE college SET salary = 23000 WHERE ID = 127;
+UPDATE college SET salary = 24000 WHERE ID = 128;
+
+select sum(salary) from college;
+
+Select avg (salary) from college;
+
+select min(salary) from college;
+
+select max(salary) from college;
+
+select count(salary) from college;
+
+select * from college (21000,25000);
+
+select * from college WHERE salary between 21000 to 29000;
