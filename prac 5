@@ -1,0 +1,40 @@
+show databases;
+
+CREATE TABLE students (
+  Id INT(10) PRIMARY KEY,
+  name varchar(20) NOT NULL,
+  address varchar(20) NOT NULL
+);
+
+select * from students;
+
+INSERT INTO students VALUES (120, 'rohit', 'malad');
+INSERT INTO students VALUES (121, 'dabjeet', 'bhyndar');
+INSERT INTO students VALUES (122, 'satish', 'kandivali');
+INSERT INTO students VALUES (123, 'deva', 'malad');
+
+use college;
+create table cources ( c_ID int (10),name varchar(20),S_ID int (10));
+
+select * from cources;
+
+Insert into Cources value (200,'IT', 101);
+Insert into Cources value (201,'CS', 102);
+Insert into Cources value (202,'BMS', 103);
+
+#inner join
+
+
+
+
+#left join
+
+
+
+
+#right join
+
+
+
+
+
