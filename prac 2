@@ -1,3 +1,5 @@
+show databases;
+create database college;
 CREATE TABLE college (
   Id INT(10) PRIMARY KEY,
   name varchar(20) NOT NULL,
@@ -5,8 +7,10 @@ CREATE TABLE college (
   year varchar(12) NOT NULL
 );
 
+select * from college;
+
 INSERT INTO college VALUES (120, 'rohit', 'bsc.cs','first year');
-INSERT INTO college VALUES (121, 'chaman', 'bsc.cs','first year' );
+INSERT INTO college VALUES (121, 'chaman', 'bsc.cs','first year');
 INSERT INTO college VALUES (122, 'dabjeet', 'bsc.cs','first year');
 INSERT INTO college VALUES (123, 'asif', 'bsc.cs','first year');
 INSERT INTO college VALUES (124, 'satish', 'bsc.cs','first year');
@@ -28,5 +32,3 @@ ALTER TABLE university DROP age;
 drop table university;
 
 SELECT * FROM university ;
-
-
