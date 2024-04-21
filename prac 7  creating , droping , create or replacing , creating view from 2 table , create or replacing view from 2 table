@@ -28,3 +28,19 @@ INSERT INTO student_marks VALUES (122, 'dabjeet', '20',52);
 INSERT INTO student_marks VALUES (123, 'asif', '20',53);
 INSERT INTO student_marks VALUES (124, 'satish', '20',54);
 INSERT INTO student_marks VALUES (125, 'deva', '20',55);
+
+
+#creating view
+
+
+#droping view
+
+
+#create or replacing view
+
+
+#creating view from 2 table
+
+
+#create or replacing view from 2 table
+
