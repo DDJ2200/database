@@ -5,7 +5,7 @@ CREATE TABLE students (
   contact INT(12) NOT NULL
 );
 
-##############################################################################
+
 INSERT INTO students VALUES (120, 'rohit', 'malad','81692171');
 INSERT INTO students VALUES (121, 'chaman', 'malad','2312638' );
 INSERT INTO students VALUES (122, 'dabjeet', 'bhyndar','7363736');
@@ -16,21 +16,19 @@ INSERT INTO students VALUES (126, 'sai', 'mira road','98765432');
 INSERT INTO students VALUES (127, 'sunny', 'nalasopara','0897656');
 INSERT INTO students VALUES (128, 'pranay', 'andheri','1245678');
 INSERT INTO students VALUES (129,'kaustubh','khar','738272');
-##############################################################################
-UPDATE students set address='navi mumbai' where ID=129;
-##############################################################
-ALTER TABLE students add age int;
-#########################################################################
-ALTER  TABLE students DROP age;
-###################################################################3
-delete from students WHERE ID='124';
-######################################################################
-RENAME  TABLE students TO practical;
-#######################################################
-DROP TABLE practical;
-#######################################################################
 
-###################################### 
+UPDATE students set address='navi mumbai' where ID=129;
+
+ALTER TABLE students add age int;
+
+ALTER  TABLE students DROP age;
+
+delete from students WHERE ID='124';
+
+RENAME  TABLE students TO practical;
+
+DROP TABLE practical;
+
 SELECT * FROM practical ;
 
 
