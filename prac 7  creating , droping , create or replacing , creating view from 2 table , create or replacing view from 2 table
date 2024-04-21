@@ -1,0 +1,30 @@
+show databases;
+use college;
+CREATE TABLE student_info (
+  Id INT(10) PRIMARY KEY,
+  name varchar(20) NOT NULL,
+  address varchar(20)
+);
+
+select * from student_info;
+
+INSERT INTO student_info VALUES (120, 'rohit', 'malad');
+INSERT INTO student_info VALUES (121, 'chaman', 'malad');
+INSERT INTO student_info VALUES (122, 'dabjeet', 'bhyndar');
+INSERT INTO student_info VALUES (123, 'asif', 'malad');
+INSERT INTO student_info VALUES (124, 'satish', 'kandivali');
+INSERT INTO student_info VALUES (125, 'deva', 'malad');
+
+show databases;
+use college;
+create table student_marks (
+SID int (10) , name varchar (50) , age int (50) , marks int (10));
+
+select * from student_marks;
+
+INSERT INTO student_marks VALUES (120, 'rohit', '20',50);
+INSERT INTO student_marks VALUES (121, 'chaman', '20',51);
+INSERT INTO student_marks VALUES (122, 'dabjeet', '20',52);
+INSERT INTO student_marks VALUES (123, 'asif', '20',53);
+INSERT INTO student_marks VALUES (124, 'satish', '20',54);
+INSERT INTO student_marks VALUES (125, 'deva', '20',55);
