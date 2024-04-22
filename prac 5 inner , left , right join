@@ -28,12 +28,12 @@ select students.ID , students.name , cources.c_ID from students inner join courc
 
 
 #left join
-
+select students.ID , students.name ,students.address,cources.c_ID from students left join cources on students.ID=cources.c_ID;
 
 
 
 #right join
-
+select students.ID , students.name ,students.address,cources.c_ID from students right join cources on students.ID=cources.c_ID;
 
 
 
