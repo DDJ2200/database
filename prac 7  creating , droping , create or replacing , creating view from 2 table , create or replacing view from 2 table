@@ -35,13 +35,13 @@ create view t2 as select name,address from student_info where Id < 124;
 select * from t2;
 
 #droping view
+drop view t2;
 
 
 #create or replacing view
+create or replace view t12 as select * from t2 where address='bhyndar';
+select * from t12;
 
 
-#creating view from 2 table
 
-
-#create or replacing view from 2 table
 
