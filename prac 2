@@ -1,5 +1,5 @@
 show databases;
-create database college;
+create database class;
 CREATE TABLE college (
   Id INT(10) PRIMARY KEY,
   name varchar(20) NOT NULL,
