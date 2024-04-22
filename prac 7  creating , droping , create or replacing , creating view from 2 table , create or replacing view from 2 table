@@ -31,7 +31,8 @@ INSERT INTO student_marks VALUES (125, 'deva', '20',55);
 
 
 #creating view
-
+create view t2 as select name,address from student_info where Id < 124;
+select * from t2;
 
 #droping view
 
