@@ -24,7 +24,7 @@ Insert into Cources value (202,'BMS', 103);
 
 #inner join
 
-
+select students.ID , students.name , cources.c_ID from students inner join cources on students.ID=cources.c_ID;
 
 
 #left join
